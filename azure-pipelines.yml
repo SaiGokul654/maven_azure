@@ -23,5 +23,5 @@ steps:
     
 -task:PublishBuildArtificats@1
     inputs:
-    pathToPublish: '$(Build.SourcesDirectory)'
-    artifactName: 'drop'
+      pathToPublish: '$(Build.SourcesDirectory)'
+      artifactName: 'drop'
