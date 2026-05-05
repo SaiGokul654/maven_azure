@@ -21,7 +21,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     
-- task: PublishBuildArtificats@1
-    inputs:
-      pathToPublish: '$(Build.SourcesDirectory)'
-      artifactName: 'drop'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(Build.SourcesDirectory)'
+    artifactName: 'drop'
